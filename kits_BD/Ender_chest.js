@@ -1,7 +1,7 @@
 let enderChest = [
     ["Ender_Chest.webp", 64],
     ["shalker.webp", 1],
-    ["shalker.webp", 1],
+    ["png/carrot.png", 64],
     ["shalker.webp", 1],
     ["shalker.webp", 1],
     ["shalker.webp", 1],
