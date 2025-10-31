@@ -11,12 +11,14 @@ body {
     src: url("font/minecraft.ttf");
 }
 
-
+.wrapper {
+    margin: auto;
+    max-width: 600px;
+}
 
 /* сундук */
 .chest {
     width: 100%;
-    max-width: 600px;
     display: grid;
     grid-gap: 2px;
     padding: 10px;
@@ -38,7 +40,7 @@ body {
     transition: background-color 0.2s ease;
 
     &:hover {
-        background-color: red;
+        background-color: #777;
         cursor: pointer;
     }
 }
