@@ -1,14 +1,22 @@
-let chest = document.getElementsByClassName('chest')[0];
+let wrapper = document.getElementsByTagName('main')[0].getElementsByClassName('wrapper')[0];
 
-// Если кит полностью заполнен одним предметом по стаку
-if (enderChest.length == 1) {
-    for (i = 0; i < 27; i++) {
-        chest.innerHTML += `<div class="cell" style="background-image: url(img/${enderChest[0][0]});">
-<div class="count">${enderChest[0][1]}</div>
-</div>`;}
-} else {
-    for (i = 0; i < 27; i++) {
-        chest.innerHTML += `<div class="cell" style="background-image: url(img/${enderChest[i][0]});">
-    <div class="count">${enderChest[i][1]}</div>
-</div>`;};
+
+// кол-во китов
+let builderKITCount = builderKIT.length;
+console.log('Строительный кит:', builderKITCount, 'шт');
+
+// цикл китов
+for (i = 0; i < builderKITCount; i++) {
+    let chest = document.createElement('div');
+    chest.className = 'chest';
+    
+    // цикл ячеек
+    let cash = ''; // буфер всех предметов шалкера
+    for (a = 0; a < 27; a++) {
+        cash += `<div class="cell" style="background-image: url(img/${builderKIT[i][a][0]});"><div class="count">${builderKIT[i][a][1]}</div></div>`;
+    };
+    
+    chest.innerHTML = cash;
+
+    wrapper.appendChild(chest);
 };
