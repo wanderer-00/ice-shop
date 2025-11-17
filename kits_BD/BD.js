@@ -1,11 +1,11 @@
 let builderKIT = [
     [
-        ["png/coal.png", 64],
-        ["png/iron_ingot.png", 64],
-        ["png/gold_ingot.png", 64],
-        ["png/redstone.png", 64],
-        ["png/lapis_lazuli.png", 64],
-        ["png/diamond.png", 64],
+        ["png/arrow.png", 64],
+        ["png/arrow.png", 64],
+        ["png/arrow.png", 64],
+        ["png/arrow.png", 64],
+        ["png/arrow.png", 64],
+        ["png/arrow.png", 64],
         ["png/arrow.png", 64],
         ["png/arrow.png", 64],
         ["png/arrow.png", 64],
@@ -56,5 +56,8 @@ let builderKIT = [
         ["png/totem_of_undying.png", 64],
         ["png/totem_of_undying.png", 64],
         ["png/totem_of_undying.png", 64]
+    ],
+    [
+        ["end_crystal", 64*27]
     ],
 ]
