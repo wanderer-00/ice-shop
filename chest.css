@@ -20,7 +20,7 @@ body {
 .chest {
     display: grid;
     grid-gap: 2px;
-    padding: 10px;
+    padding: 6px;
     margin: 1em auto;
     border-radius: 4px;
     grid-template-columns: repeat(9, 1fr);
@@ -50,7 +50,7 @@ body {
     right: 0;
     bottom: 0;
     font-family: "Minecraft", monospace;
-    font-size: 1.5rem;
+    font-size: 1rem;
     user-select: none;
     text-shadow: 1px 1px black;
 /*    text-shadow: 0px 0px 4px black;*/
