@@ -12,8 +12,14 @@ for (i = 0; i < builderKITCount; i++) {
     
     // цикл ячеек
     let cash = ''; // буфер всех предметов шалкера
-    for (a = 0; a < 27; a++) {
-        cash += `<div class="cell" style="background-image: url(img/${builderKIT[i][a][0]});"><div class="count">${builderKIT[i][a][1]}</div></div>`;
+    if(builderKIT[i].length == 1) {
+        for (a = 0; a < 27; a++) {
+            cash += `<div class="cell" style="background-image: url(img/png/${builderKIT[i][0][0]});"><div class="count">${builderKIT[i][0][1]}</div></div>`;
+        };
+    } else {
+        for (a = 0; a < 27; a++) {
+            cash += `<div class="cell" style="background-image: url(img/png/${builderKIT[i][a][0]});"><div class="count">${builderKIT[i][a][1]}</div></div>`;
+        };
     };
     
     chest.innerHTML = cash;
