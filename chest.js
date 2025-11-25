@@ -2,7 +2,7 @@ let wrapper = document.getElementsByTagName('main')[0].getElementsByClassName('w
 
 
 // кол-во китов
-let builderKITCount = builderKIT.length;
+let builderKITCount = KIT.length;
 console.log('Кол-во китов:', builderKITCount, 'шт');
 
 // цикл создания китов
@@ -16,11 +16,11 @@ for (i = 0; i < builderKITCount; i++) {
     // буфер ячеек предметов одного честа
     let cash = '';
     
-    if(builderKIT[i].length == 1) {
+    if(KIT[i].length == 1) {
 
         // если чест состоит из множества одинаковых предметов
         for (a = 0; a < 27; a++) {
-            cash += `<div class="cell" style="background-image: url(img/png/${builderKIT[i][0][0]});"><div class="count">${builderKIT[i][0][1]}</div></div>`;
+            cash += `<div class="cell" style="background-image: url(img/png/${KIT[i][0][0]});"><div class="count">${KIT[i][0][1]}</div></div>`;
         }
 
     } else {
@@ -28,10 +28,10 @@ for (i = 0; i < builderKITCount; i++) {
         // если чест состоит из множества разных предметов
         for (a = 0; a < 27; a++) {
             // если чест не полностью заполнен предметами, то заполнить пустыми ячейками
-            if( builderKIT[i][a][1] == 0){
+            if( KIT[i][a][1] == 0){
                 cash += `<div class="cell"></div>`;
             } else {
-                cash += `<div class="cell" style="background-image: url(img/png/${builderKIT[i][a][0]});"><div class="count">${builderKIT[i][a][1]}</div></div>`;
+                cash += `<div class="cell" style="background-image: url(img/png/${KIT[i][a][0]});"><div class="count">${KIT[i][a][1]}</div></div>`;
             }            
         }
     };

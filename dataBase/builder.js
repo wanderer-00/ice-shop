@@ -1,4 +1,4 @@
-let builderKIT = [
+let KIT = [
     [["arrow.png", 64]],
     [
         ["black_dye.png",       64],
