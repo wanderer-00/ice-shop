@@ -6,6 +6,28 @@ body {
     font-family: monospace;
 }
 
+nav {
+    display: flex;
+    gap: 1em;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 0.4em;
+    box-shadow: 0 0 10px gray;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+nav img {
+    image-rendering: pixelated;
+    margin-right: 0.8em;
+    height: 32px;
+}
+
 @font-face {
     font-family: 'Minecraft';
     src: url("font/minecraft.ttf");
