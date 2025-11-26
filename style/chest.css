@@ -11,15 +11,15 @@ nav {
     gap: 1em;
 }
 
-nav a {
+nav button {
     display: flex;
     align-items: center;
-    text-decoration: none;
-    color: black;
+    border: none;
     border-radius: 0.4em;
     box-shadow: 0 0 10px gray;
     margin: 1em 0;
-    padding: 1em;
+    padding: 0.6em;
+    cursor: pointer;
 }
 
 nav img {

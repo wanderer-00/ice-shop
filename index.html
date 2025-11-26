@@ -12,16 +12,20 @@
     <header>
         <div class="wrapper">
             <nav>
-                <a href="popular.html"><img src="img/png/golden_apple.png" alt="Описание 1">Популярное</a>
-                <a href="redstone.html"><img src="img/png/redstone.png" alt="Описание 2">Редстоун</a>
-                <a href="collection.html"><img src="img/png/music_disc_11.png" alt="Описание 2">Коллекциионные предметы</a>
+                <button onclick="render(popular)"><img src="img/png/golden_apple.png" alt="Описание 1">Популярное</button>
+                <button onclick="render(redstone)"><img src="img/png/redstone.png" alt="Описание 2">Редстоун</button>
+                <button onclick="render(collection)"><img src="img/png/music_disc_11.png" alt="Описание 2">Коллекциионные предметы</button>
             </nav>
         </div>
     </header>
     <main>
         <!-- референс https://2b2t.shop/Items -->
         <div class="wrapper"></div>
+
         <script src="dataBase/builder.js"></script>
+        <script src="dataBase/popular.js"></script>
+        <script src="dataBase/redstone.js"></script>
+        <script src="dataBase/collection.js"></script>
         <script src="chest.js"></script>
         
 <!--        <a href="page/max/index.html">Максимальные чары на предметы</a>-->

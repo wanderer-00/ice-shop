@@ -1,4 +1,4 @@
-let KIT = [
+const popular = [
     [["experience_bottle.png",  64]],
     [["totem_of_undying.png",   64]],
     [["firework_rocket.png",    64]],

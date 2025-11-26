@@ -1,4 +1,4 @@
-let KIT = [
+const builder = [
     [["arrow.png", 64]],
     [
         ["black_dye.png",       64],
