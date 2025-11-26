@@ -56,6 +56,6 @@ let KIT = [
         ["end_crystal.png",     64],
         ["end_crystal.png",     64],
         ["end_crystal.png",     64],
-        ["end_crystal.png",     64],
+        ["end_crystal.png",     64]
     ],
 ]
