@@ -30,11 +30,11 @@ function render(thisBtn, KIT) {
         // буфер ячеек предметов одного честа
         let cash = '';
 
-        if(KIT[i].length == 1) {
+        if(KIT[i].MENU.length == 1) {
 
             // если чест состоит из множества одинаковых предметов
             for (a = 0; a < 27; a++) {
-                cash += `<div class="cell" style="background-image: url(img/png/${KIT[i][0][0]});"><div class="count">${KIT[i][0][1]}</div></div>`;
+                cash += `<div class="cell" style="background-image: url(img/png/${KIT[i].MENU[0][0]});"><div class="count">${KIT[i].MENU[0][1]}</div></div>`;
             }
 
         } else {
@@ -42,10 +42,10 @@ function render(thisBtn, KIT) {
             // если чест состоит из множества разных предметов
             for (a = 0; a < 27; a++) {
                 // если чест не полностью заполнен предметами, то заполнить пустыми ячейками
-                if( KIT[i][a][1] == 0){
+                if( KIT[i].MENU[a][1] == 0){
                     cash += `<div class="cell"></div>`;
                 } else {
-                    cash += `<div class="cell" style="background-image: url(img/png/${KIT[i][a][0]});"><div class="count">${KIT[i][a][1]}</div></div>`;
+                    cash += `<div class="cell" style="background-image: url(img/png/${KIT[i].MENU[a][0]});"><div class="count">${KIT[i].MENU[a][1]}</div></div>`;
                 }            
             }
         };
@@ -59,4 +59,5 @@ function render(thisBtn, KIT) {
 };
 
 // первая инициализация
-render(popular);
+let firstBtn = document.getElementById('active');
+render(firstBtn, popular);

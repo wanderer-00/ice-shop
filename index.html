@@ -6,26 +6,29 @@
     <title>Главная</title>
     <!-- стили честов -->
     <link rel="stylesheet" href="style/chest.css">
+    <link rel="stylesheet" href="style/gradientTxt.css">
+    <link rel="stylesheet" href="style/footer.css">
 </head>
 
 <body>
     <header>
         <div class="wrapper">
             <nav>
-                <button class="tabBtn" onclick="render(this, popular)">
-                    <img src="img/png/golden_apple.png" alt="Описание 1">Популярное
+                <button class="tabBtn" onclick="render(this, popular)" id="active">
+                    <img src="img/png/golden_apple.png" alt="Описание 1"><span class="gradient-text">Популярное</span>
                 </button>
                 
                 <button class="tabBtn" onclick="render(this, redstone)">
-                    <img src="img/png/redstone.png" alt="Описание 2">Редстоун
+                    <img src="img/png/redstone.png" alt="Описание 2"><span>Редстоун</span>
                 </button>
                 
                 <button class="tabBtn" onclick="render(this, collection)">
-                    <img src="img/png/music_disc_11.png" alt="Описание 2">Коллекциионные предметы
+                    <img src="img/png/music_disc_11.png" alt="Описание 2"><span>Коллекции</span>
                 </button>
             </nav>
         </div>
     </header>
+
     <main>
         <!-- референс https://2b2t.shop/Items -->
         <div class="wrapper"></div>
@@ -34,10 +37,15 @@
         <script src="dataBase/popular.js"></script>
         <script src="dataBase/redstone.js"></script>
         <script src="dataBase/collection.js"></script>
+
         <script src="chest.js"></script>
-        
-<!--        <a href="page/max/index.html">Максимальные чары на предметы</a>-->
     </main>
+
+    <footer>
+        <div class="wrapper">
+            <a href="page/max/index.html">Максимальные чары на предметы</a>
+        </div>
+    </footer>
 </body>
 
 </html>

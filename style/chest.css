@@ -4,10 +4,14 @@
 
 @font-face {
     font-family: 'minecraft';
-    src: url("font/minecraft.ttf");
+    src: url("../font/minecraft.ttf");
 }
 
 body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     font-family: 'minecraft', monospace;
 }
 
@@ -27,10 +31,16 @@ nav button {
     cursor: pointer;
 }
 
-nav img {
+nav button img {
     image-rendering: pixelated;
     margin-right: 0.8em;
     height: 32px;
+}
+
+nav button span {
+    color: #AAA;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .wrapper {
@@ -79,10 +89,6 @@ nav img {
     user-select: none;
     text-shadow: 1px 1px black;
 /*    text-shadow: 0px 0px 4px black;*/
-}
-
-#select {
-    color: red;
 }
 
 @media (orientation: portrait){
