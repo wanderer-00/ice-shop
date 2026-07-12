@@ -109,6 +109,46 @@ main .wrapper {
         padding: 0 1rem;
         display: flex;
     }
+
+    main .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+
+        /* Нечетные отступы (после 1-го, 3-го, 5-го элемента и т.д.) */
+        & > *:nth-child(even) {
+            margin-bottom: 2rem;        /* Большой отступ */
+        }
+    }
+    .NAME {
+        grid-area: NAME;
+    }
+    .PRIC {
+        grid-area: PRIC;
+    }
+    .NOTE {
+        grid-area: NOTE;
+    }
+
+    .info {
+        display: grid;
+        grid-template-rows:
+            auto
+            1fr;
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "NAME PRIC"
+            "NOTE PRIC"
+        ;
+        & h2,
+        & h1 {
+            margin: 0;
+        }
+        & h1 {
+            font-size: 3rem;
+        }
+    }
+
     .chest {
         width: 100%;
     }

@@ -63,7 +63,7 @@ function render(thisBtn, KIT) {
         wrapper.innerHTML += `
         <div class="info">
             <h2 class="NAME">${NAME}</h2>
-            <h3 class="PRIC">${PRIC} &#8381;</h3>
+            <h1 class="PRIC">${PRIC} &#8381;</h1>
             <p class="NOTE">${NOTE}</p>
         `;
     };   
