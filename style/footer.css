@@ -1,3 +1,9 @@
 footer .wrapper {
     padding: 1rem 0;
 }
+
+footer ul {
+    display: flex;
+    flex-direction: column; /* Выстраивает элементы вертикально */
+    gap: 0.5rem;            /* Задает одинаковый шаг между всеми li */
+}
