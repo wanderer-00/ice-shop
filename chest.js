@@ -22,6 +22,10 @@ function render(thisBtn, KIT) {
     // цикл создания китов
     for (i = 0; i < builderKITCount; i++) {
 
+        let NAME = KIT[i].NAME;
+        let PRIC = KIT[i].PRIC;
+        let NOTE = KIT[i].NOTE;
+
         // создание контейнера честа
         let chest = document.createElement('div');
         chest.className = 'chest';
@@ -55,6 +59,13 @@ function render(thisBtn, KIT) {
 
         // добавление честа на страницу сайта
         wrapper.appendChild(chest);
+
+        wrapper.innerHTML += `
+        <div class="info">
+            <h2 class="NAME">${NAME}</h2>
+            <h3 class="PRIC">${PRIC} &#8381;</h3>
+            <p class="NOTE">${NOTE}</p>
+        `;
     };   
 };
 

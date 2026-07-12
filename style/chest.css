@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    font-family: 'minecraft', monospace;
+    font-family: sans-serif, monospace;
 }
 
 nav {
@@ -51,16 +51,28 @@ nav button span {
     flex-wrap: wrap;
 }
 
+main .wrapper {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-gap: 1rem;
+}
+
 /* сундук */
 .chest {
-    width: 49%;
+    /* width: 49%; */
+    width: 500px;
     display: grid;
     grid-gap: 2px;
     padding: 6px;
+    font-family: 'minecraft', monospace;
     border-radius: 4px;
     grid-template-columns: repeat(9, 1fr);
     background-color: #C7C7C7;
 }
+
+/* .NAME {
+    margin-top: 0;
+} */
 
 /* ячейка сундука */
 .cell {
