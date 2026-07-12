@@ -12,9 +12,17 @@
     <header>
         <div class="wrapper">
             <nav>
-                <button onclick="render(popular)"><img src="img/png/golden_apple.png" alt="Описание 1">Популярное</button>
-                <button onclick="render(redstone)"><img src="img/png/redstone.png" alt="Описание 2">Редстоун</button>
-                <button onclick="render(collection)"><img src="img/png/music_disc_11.png" alt="Описание 2">Коллекциионные предметы</button>
+                <button class="tabBtn" onclick="render(this, popular)">
+                    <img src="img/png/golden_apple.png" alt="Описание 1">Популярное
+                </button>
+                
+                <button class="tabBtn" onclick="render(this, redstone)">
+                    <img src="img/png/redstone.png" alt="Описание 2">Редстоун
+                </button>
+                
+                <button class="tabBtn" onclick="render(this, collection)">
+                    <img src="img/png/music_disc_11.png" alt="Описание 2">Коллекциионные предметы
+                </button>
             </nav>
         </div>
     </header>

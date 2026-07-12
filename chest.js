@@ -1,6 +1,17 @@
 let wrapper = document.getElementsByTagName('main')[0].getElementsByClassName('wrapper')[0];
 
-function render(KIT) {
+function render(thisBtn, KIT) {
+    // 1. Находим все кнопки с общим классом
+    const allButtons = document.querySelectorAll('.tabBtn');
+
+    // 2. Перебираем их и удаляем ID у каждой
+    allButtons.forEach(button => {
+        button.removeAttribute('id'); // Полностью удаляет атрибут id из HTML
+    });
+
+    // 3. окрашиваем вкладку категории
+    thisBtn.id = 'select';
+
     // очистка wrapper
     wrapper.innerHTML = "";
     
@@ -47,4 +58,5 @@ function render(KIT) {
     };   
 };
 
-render(collection);
+// первая инициализация
+render(popular);

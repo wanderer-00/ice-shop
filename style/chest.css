@@ -2,8 +2,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'minecraft';
+    src: url("font/minecraft.ttf");
+}
+
 body {
-    font-family: monospace;
+    font-family: 'minecraft', monospace;
 }
 
 nav {
@@ -26,11 +31,6 @@ nav img {
     image-rendering: pixelated;
     margin-right: 0.8em;
     height: 32px;
-}
-
-@font-face {
-    font-family: 'Minecraft';
-    src: url("font/minecraft.ttf");
 }
 
 .wrapper {
@@ -79,6 +79,10 @@ nav img {
     user-select: none;
     text-shadow: 1px 1px black;
 /*    text-shadow: 0px 0px 4px black;*/
+}
+
+#select {
+    color: red;
 }
 
 @media (orientation: portrait){
