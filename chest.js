@@ -38,7 +38,7 @@ function render(thisBtn, KIT) {
 
             // если чест состоит из множества одинаковых предметов
             for (a = 0; a < 27; a++) {
-                cash += `<div class="cell" style="background-image: url(img/item/${KIT[i].MENU[0][0]}.png);"><div class="count">${KIT[i].MENU[0][1]}</div></div>`;
+                cash += `<div class="cell" style="background-image: url(textures/item/${KIT[i].MENU[0][0]}.png);"><div class="count">${KIT[i].MENU[0][1]}</div></div>`;
             }
 
         } else {
@@ -49,7 +49,7 @@ function render(thisBtn, KIT) {
                 if( KIT[i].MENU[a][1] == 0){
                     cash += `<div class="cell"></div>`;
                 } else {
-                    cash += `<div class="cell" style="background-image: url(img/item/${KIT[i].MENU[a][0]}.png);"><div class="count">${KIT[i].MENU[a][1]}</div></div>`;
+                    cash += `<div class="cell" style="background-image: url(textures/item/${KIT[i].MENU[a][0]}.png);"><div class="count">${KIT[i].MENU[a][1]}</div></div>`;
                 }            
             }
         };
